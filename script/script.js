@@ -1,7 +1,7 @@
 
-const myLibrary = [{ title: "book1", author: "author1", pages: 101, isRead: false },
-{ title: "book2", author: "author2", pages: 102, isRead: false },
-{ title: "book3", author: "author3", pages: 103, isRead: false },
+const myLibrary = [{ title: "To Kill a Mockingbird", author: "Harper Lee", pages: 281, isRead: false },
+{ title: "1984", author: "George Orwell", pages: 328, isRead: false },
+{ title: "The Great Gatsby", author: "F. Scott Fitzgerald", pages: 180, isRead: false },
 ];
 
 
@@ -10,7 +10,7 @@ const bookshow = function () {
   let booksshow = document.querySelector(".booksshow");
   booksshow.innerHTML = ""
   for (let i = 0; i < myLibrary.length; i++) {
-    booksshow.innerHTML += `<p data-id = ${i}>` + "The " + myLibrary[i].title + " was writen by " + myLibrary[i].author + " and have " + myLibrary[i].pages + " pages " + `${myLibrary[i].isRead ? "read" : "not read"}` + ` <button id="reading" class=" ${i}">read</button> ` + ` <button id="remove" class=" ${i}">remove</button> ` + " by me. " + "</p>";
+    booksshow.innerHTML += `<p data-id = ${i}>` + "The " + myLibrary[i].title + " was writen by " + myLibrary[i].author + " and have " + myLibrary[i].pages + " pages " + `${myLibrary[i].isRead ? "read" : "not read"}` + " by me. " + ` <button id="reading"  class=" ${i}">read</button> ` + ` <button id="remove" class=" ${i}">remove</button> ` + "</p>";
   }
 }
 document.getElementById("sub").addEventListener("click", function (event) {
