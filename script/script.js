@@ -10,7 +10,7 @@ const bookshow = function () {
   let booksshow = document.querySelector(".booksshow");
   booksshow.innerHTML = ""
   for (let i = 0; i < myLibrary.length; i++) {
-    booksshow.innerHTML += `<p data-id = ${i}>` + " " + myLibrary[i].title + " " + myLibrary[i].author + " " + myLibrary[i].pages + " " + `${myLibrary[i].isRead ? "read" : "not read"}` + ` <button id="reading" class=" ${i}">read</button> ` + ` <button id="remove" class=" ${i}">remove</button> ` + "</p>";
+    booksshow.innerHTML += `<p data-id = ${i}>` + "The " + myLibrary[i].title + " was writen by " + myLibrary[i].author + " and have " + myLibrary[i].pages + " pages " + `${myLibrary[i].isRead ? "read" : "not read"}` + ` <button id="reading" class=" ${i}">read</button> ` + ` <button id="remove" class=" ${i}">remove</button> ` + " by me. " + "</p>";
   }
 }
 document.getElementById("sub").addEventListener("click", function (event) {
